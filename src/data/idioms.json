@@ -36,6 +36,78 @@
     "level": "normal"
   },
   {
+    "id": "fuwa-raidou",
+    "idiom": "付和雷同",
+    "reading": "ふわらいどう",
+    "blankIndex": 0,
+    "choices": ["付", "不", "符", "府"],
+    "meaning": "自分の考えなく、他人の意見にすぐ同調すること。",
+    "level": "normal"
+  },
+  {
+    "id": "iku-douon",
+    "idiom": "異口同音",
+    "reading": "いくどうおん",
+    "blankIndex": 1,
+    "choices": ["口", "句", "工", "功"],
+    "meaning": "多くの人が、同じことを口をそろえて言うこと。",
+    "level": "normal"
+  },
+  {
+    "id": "gori-muchuu",
+    "idiom": "五里霧中",
+    "reading": "ごりむちゅう",
+    "blankIndex": 2,
+    "choices": ["霧", "夢", "無", "務"],
+    "meaning": "深い霧の中にいるように、方針や見通しが立たないこと。",
+    "level": "normal"
+  },
+  {
+    "id": "imi-shincho",
+    "idiom": "意味深長",
+    "reading": "いみしんちょう",
+    "blankIndex": 2,
+    "choices": ["深", "慎", "真", "信"],
+    "meaning": "表面の意味だけでなく、深い含みがあること。",
+    "level": "normal"
+  },
+  {
+    "id": "onko-chishin",
+    "idiom": "温故知新",
+    "reading": "おんこちしん",
+    "blankIndex": 1,
+    "choices": ["故", "古", "固", "顧"],
+    "meaning": "故は昔のこと。古いことを学び、新しい知見を得ること。",
+    "level": "normal"
+  },
+  {
+    "id": "kiki-ippatsu",
+    "idiom": "危機一髪",
+    "reading": "ききいっぱつ",
+    "blankIndex": 3,
+    "choices": ["髪", "発", "抜", "伐"],
+    "meaning": "髪一本の差で危なかった、ぎりぎりのところ。",
+    "level": "normal"
+  },
+  {
+    "id": "zettai-zetsumei",
+    "idiom": "絶体絶命",
+    "reading": "ぜったいぜつめい",
+    "blankIndex": 1,
+    "choices": ["体", "対", "帯", "隊"],
+    "meaning": "逃げ場がなく、どうにもならない窮境に追い込まれたこと。",
+    "level": "normal"
+  },
+  {
+    "id": "kankotsu-dattai",
+    "idiom": "換骨奪胎",
+    "reading": "かんこつだったい",
+    "blankIndex": 3,
+    "choices": ["胎", "体", "態", "退"],
+    "meaning": "骨を換え胎を奪う。古人の作品を土台に、新しいものを作り出すこと。",
+    "level": "normal"
+  },
+  {
     "id": "gashin-shoutan",
     "idiom": "臥薪嘗胆",
     "reading": "がしんしょうたん",
@@ -72,6 +144,78 @@
     "level": "hard"
   },
   {
+    "id": "shimen-soka",
+    "idiom": "四面楚歌",
+    "reading": "しめんそか",
+    "blankIndex": 2,
+    "choices": ["楚", "礎", "疎", "祖"],
+    "meaning": "楚の歌が四方から聞こえる。周囲を敵に囲まれ、助けがないこと。",
+    "level": "hard"
+  },
+  {
+    "id": "ichiren-takushou",
+    "idiom": "一蓮托生",
+    "reading": "いちれんたくしょう",
+    "blankIndex": 2,
+    "choices": ["托", "託", "択", "拓"],
+    "meaning": "托は託すこと。運命をともにし、苦楽を分かち合うこと。",
+    "level": "hard"
+  },
+  {
+    "id": "katsumoku-soutai",
+    "idiom": "刮目相待",
+    "reading": "かつもくそうたい",
+    "blankIndex": 0,
+    "choices": ["刮", "括", "筈", "割"],
+    "meaning": "刮はこすること。目をこすって見なおすほど、将来に期待すること。",
+    "level": "hard"
+  },
+  {
+    "id": "kyoshin-tankai",
+    "idiom": "虚心坦懐",
+    "reading": "きょしんたんかい",
+    "blankIndex": 2,
+    "choices": ["坦", "但", "担", "胆"],
+    "meaning": "坦は平らなこと。わだかまりなく、素直な心でものごとにあたること。",
+    "level": "hard"
+  },
+  {
+    "id": "futou-fukutsu",
+    "idiom": "不撓不屈",
+    "reading": "ふとうふくつ",
+    "blankIndex": 1,
+    "choices": ["撓", "暁", "繞", "焼"],
+    "meaning": "撓はたわむこと。どんな困難にも屈せず、意志を貫くこと。",
+    "level": "hard"
+  },
+  {
+    "id": "uyo-kyokusetsu",
+    "idiom": "紆余曲折",
+    "reading": "うよきょくせつ",
+    "blankIndex": 0,
+    "choices": ["紆", "迂", "芋", "宇"],
+    "meaning": "紆は曲がりくねること。物事がすんなり進まず、複雑な経緯をたどること。",
+    "level": "hard"
+  },
+  {
+    "id": "taizen-jijaku",
+    "idiom": "泰然自若",
+    "reading": "たいぜんじじゃく",
+    "blankIndex": 0,
+    "choices": ["泰", "太", "汰", "怠"],
+    "meaning": "泰はやすらか。落ち着き払って、動じないさま。",
+    "level": "hard"
+  },
+  {
+    "id": "bokushu-seiki",
+    "idiom": "墨守成規",
+    "reading": "ぼくしゅせいき",
+    "blankIndex": 0,
+    "choices": ["墨", "黙", "牧", "僕"],
+    "meaning": "古い規則ややり方にかたくなにこだわり、改めようとしないこと。",
+    "level": "hard"
+  },
+  {
     "id": "shippuu-mokuu",
     "idiom": "櫛風沐雨",
     "reading": "しっぷうもくう",
@@ -87,6 +231,42 @@
     "blankIndex": 3,
     "choices": ["陋", "漏", "楼", "露"],
     "meaning": "陋は狭くいやしい。かたくなで、視野が狭いこと。",
+    "level": "veryHard"
+  },
+  {
+    "id": "souseki-chinryuu",
+    "idiom": "漱石枕流",
+    "reading": "そうせきちんりゅう",
+    "blankIndex": 0,
+    "choices": ["漱", "嗽", "薮", "数"],
+    "meaning": "石で口をすすぎ流れを枕にする。ひねくれて強情なこと。夏目漱石の号の由来。",
+    "level": "veryHard"
+  },
+  {
+    "id": "shunpuu-taitou",
+    "idiom": "春風駘蕩",
+    "reading": "しゅんぷうたいとう",
+    "blankIndex": 2,
+    "choices": ["駘", "台", "怠", "殆"],
+    "meaning": "駘蕩はやわらかくのどかなさま。春の穏やかな風、また人柄ののどかさ。",
+    "level": "veryHard"
+  },
+  {
+    "id": "kankan-gakugaku",
+    "idiom": "侃侃諤諤",
+    "reading": "かんかんがくがく",
+    "blankIndex": 2,
+    "choices": ["諤", "愕", "顎", "鍔"],
+    "meaning": "諤は直言すること。遠慮なく、はきはきと意見を述べるさま。",
+    "level": "veryHard"
+  },
+  {
+    "id": "chimi-mouryou",
+    "idiom": "魑魅魍魎",
+    "reading": "ちみもうりょう",
+    "blankIndex": 3,
+    "choices": ["魎", "両", "涼", "梁"],
+    "meaning": "山や川にすむ怪物。転じて、さまざまな悪事を働く者のたとえ。",
     "level": "veryHard"
   }
 ]
