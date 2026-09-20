@@ -1,10 +1,14 @@
 type Props = {
-  correctCount: number
-  totalQuestions: number
-  onRestart: () => void
-}
+  correctCount: number;
+  totalQuestions: number;
+  onRestart: () => void;
+};
 
-export function ResultScreen({ correctCount, totalQuestions, onRestart }: Props) {
+export function ResultScreen({
+  correctCount,
+  totalQuestions,
+  onRestart,
+}: Props) {
   return (
     <div className="screen screen--centered">
       <p className="result-lead">{totalQuestions}もんちゅう</p>
@@ -12,8 +16,8 @@ export function ResultScreen({ correctCount, totalQuestions, onRestart }: Props)
         <span className="result-score-number">{correctCount}</span>もん せいかい
       </p>
       <button type="button" className="big-button" onClick={onRestart}>
-        もういっかい
+        最初からはじめる
       </button>
     </div>
-  )
+  );
 }
