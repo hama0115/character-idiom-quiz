@@ -4,11 +4,11 @@
   --ink: #1b1b1b;
   --muted: #7a726a;
   --line: #ccc3b5;
-  /* 正解は青、不正解は赤。赤緑の区別に頼らない（色覚多様性への配慮） */
-  --correct: #1a6fb5;
-  --correct-bg: #e3f0fb;
-  --wrong: #c0392b;
-  --wrong-bg: #fbeae7;
+  /* 正解は赤、不正解は青。赤緑の区別に頼らない（色覚多様性への配慮） */
+  --correct: #c0392b;
+  --correct-bg: #fbeae7;
+  --wrong: #1a6fb5;
+  --wrong-bg: #e3f0fb;
 
   /* 縦横どちらの向きでも画面からはみ出さないよう、vh と vw の小さいほうに合わせる */
   --choice-size: max(84px, min(21vh, 19vw, 190px));

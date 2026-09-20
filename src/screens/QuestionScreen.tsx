@@ -54,8 +54,8 @@ export function QuestionScreen({
           blankIndex={question.blankIndex}
           revealed={judging !== null}
         />
-        {/* 間違えたときだけ意味を出す。空でも高さを確保して画面を動かさない */}
-        <p className="meaning">{judging && !judging.isCorrect ? question.meaning : ''}</p>
+        {/* 判定後は正解・不正解どちらでも意味を出す。空でも高さを確保して画面を動かさない */}
+        <p className="meaning">{judging ? question.meaning : ''}</p>
       </main>
 
       <div className="choices">
