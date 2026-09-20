@@ -4,8 +4,9 @@
   --ink: #1b1b1b;
   --muted: #7a726a;
   --line: #ccc3b5;
-  --correct: #1b7f3b;
-  --correct-bg: #e6f4ea;
+  /* 正解は青、不正解は赤。赤緑の区別に頼らない（色覚多様性への配慮） */
+  --correct: #1a6fb5;
+  --correct-bg: #e3f0fb;
   --wrong: #c0392b;
   --wrong-bg: #fbeae7;
 
