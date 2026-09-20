@@ -1,0 +1,92 @@
+[
+  {
+    "id": "garyou-tensei",
+    "idiom": "画竜点睛",
+    "reading": "がりょうてんせい",
+    "blankIndex": 3,
+    "choices": ["睛", "晴", "精", "清"],
+    "meaning": "睛は瞳のこと。最後に加える、いちばん大事な仕上げ。",
+    "level": "normal"
+  },
+  {
+    "id": "youtou-kuniku",
+    "idiom": "羊頭狗肉",
+    "reading": "ようとうくにく",
+    "blankIndex": 2,
+    "choices": ["狗", "苟", "拘", "駒"],
+    "meaning": "狗は犬。羊の頭を看板に犬の肉を売る、見かけ倒しのこと。",
+    "level": "normal"
+  },
+  {
+    "id": "goetsu-doushuu",
+    "idiom": "呉越同舟",
+    "reading": "ごえつどうしゅう",
+    "blankIndex": 3,
+    "choices": ["舟", "州", "洲", "周"],
+    "meaning": "仲の悪い呉と越の人が、同じ舟に乗り合わせること。",
+    "level": "normal"
+  },
+  {
+    "id": "boujaku-bujin",
+    "idiom": "傍若無人",
+    "reading": "ぼうじゃくぶじん",
+    "blankIndex": 0,
+    "choices": ["傍", "防", "坊", "妨"],
+    "meaning": "傍らに人無きが若し。人目を気にせず勝手にふるまうこと。",
+    "level": "normal"
+  },
+  {
+    "id": "gashin-shoutan",
+    "idiom": "臥薪嘗胆",
+    "reading": "がしんしょうたん",
+    "blankIndex": 1,
+    "choices": ["薪", "新", "身", "辛"],
+    "meaning": "薪の上に臥し、苦い胆を嘗める。目的のため苦労に耐えること。",
+    "level": "hard"
+  },
+  {
+    "id": "kendo-chourai",
+    "idiom": "捲土重来",
+    "reading": "けんどちょうらい",
+    "blankIndex": 0,
+    "choices": ["捲", "巻", "券", "圏"],
+    "meaning": "土を捲き上げる勢いで、一度負けた者がふたたび攻めのぼること。",
+    "level": "hard"
+  },
+  {
+    "id": "gankou-shihai",
+    "idiom": "眼光紙背",
+    "reading": "がんこうしはい",
+    "blankIndex": 2,
+    "choices": ["紙", "誌", "志", "史"],
+    "meaning": "眼の光が紙の裏まで届く。字面の奥の意味まで読み取ること。",
+    "level": "hard"
+  },
+  {
+    "id": "sesshi-yakuwan",
+    "idiom": "切歯扼腕",
+    "reading": "せっしやくわん",
+    "blankIndex": 2,
+    "choices": ["扼", "握", "抑", "圧"],
+    "meaning": "扼はおさえる。歯ぎしりし腕を握りしめるほど悔しがること。",
+    "level": "hard"
+  },
+  {
+    "id": "shippuu-mokuu",
+    "idiom": "櫛風沐雨",
+    "reading": "しっぷうもくう",
+    "blankIndex": 2,
+    "choices": ["沐", "木", "黙", "目"],
+    "meaning": "沐は髪を洗うこと。風に櫛けずられ雨に洗われる、苦労の多いさま。",
+    "level": "veryHard"
+  },
+  {
+    "id": "ganmei-korou",
+    "idiom": "頑迷固陋",
+    "reading": "がんめいころう",
+    "blankIndex": 3,
+    "choices": ["陋", "漏", "楼", "露"],
+    "meaning": "陋は狭くいやしい。かたくなで、視野が狭いこと。",
+    "level": "veryHard"
+  }
+]

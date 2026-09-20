@@ -1,0 +1,295 @@
+:root {
+  --bg: #f7f4ee;
+  --surface: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #7a726a;
+  --line: #ccc3b5;
+  --correct: #1b7f3b;
+  --correct-bg: #e6f4ea;
+  --wrong: #c0392b;
+  --wrong-bg: #fbeae7;
+
+  /* 縦横どちらの向きでも画面からはみ出さないよう、vh と vw の小さいほうに合わせる */
+  --choice-size: max(84px, min(21vh, 19vw, 190px));
+  --idiom-size: max(48px, min(24vh, 17vw, 190px));
+
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans CJK JP',
+    'Noto Sans JP', 'Yu Gothic', system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100dvh;
+  overflow: hidden;
+  /* 引っ張って更新（pull-to-refresh）と、端までスクロールしたときの跳ね返りを止める */
+  overscroll-behavior: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  /* 長押しで漢字が選択されるのを防ぐ */
+  -webkit-user-select: none;
+  user-select: none;
+  /* タップ時の青いハイライトを消す */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* ダブルタップでズームさせない */
+  touch-action: manipulation;
+}
+
+/* ---------- 画面の骨格 ---------- */
+
+.screen {
+  position: relative;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  /* 画面のふちに要素が張りつかないよう、切り欠き（ノッチ）の分に余白を足す */
+  padding: calc(env(safe-area-inset-top, 0px) + 1.4vh) calc(env(safe-area-inset-right, 0px) + 2vw)
+    calc(env(safe-area-inset-bottom, 0px) + 2.2vh) calc(env(safe-area-inset-left, 0px) + 2vw);
+}
+
+.screen--centered {
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+/* ---------- タイトル・結果 ---------- */
+
+.title {
+  font-size: max(36px, min(11vh, 10vw, 96px));
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.result-lead {
+  font-size: max(20px, min(5vh, 40px));
+  color: var(--muted);
+}
+
+.result-score {
+  font-size: max(30px, min(9vh, 72px));
+  font-weight: 700;
+}
+
+.result-score-number {
+  font-size: max(56px, min(20vh, 18vw, 170px));
+  color: var(--correct);
+  margin-right: 0.1em;
+}
+
+.big-button {
+  background: var(--ink);
+  color: var(--bg);
+  font-size: max(22px, min(5.4vh, 46px));
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.7em 2.4em;
+  border-radius: 999px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+}
+
+/* 音が出せないぶん、押した手応えは見た目で返す */
+.big-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- 問題画面 ---------- */
+
+.progress {
+  flex: 0 0 auto;
+  text-align: right;
+  font-size: max(16px, min(3.4vh, 30px));
+  color: var(--muted);
+}
+
+.stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+
+.idiom {
+  display: flex;
+  gap: max(6px, min(1.6vw, 26px));
+}
+
+.idiom-char {
+  font-size: var(--idiom-size);
+  line-height: 1.1;
+  font-weight: 700;
+  width: 1em;
+  text-align: center;
+}
+
+/* 穴の中には正解の文字を透明で置いてある。表示しても幅が変わらない */
+.idiom-char--blank {
+  color: transparent;
+  border: 0.045em dashed var(--line);
+  border-radius: 0.08em;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.idiom-char--blank.is-revealed {
+  color: var(--correct);
+  border-color: var(--correct);
+  border-style: solid;
+}
+
+.meaning {
+  /* 空のときも高さを確保して、表示された瞬間に画面が動かないようにする */
+  min-height: 1.6em;
+  max-width: 88vw;
+  text-align: center;
+  font-size: max(15px, min(3.6vh, 32px));
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.choices {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: max(10px, min(2.6vw, 40px));
+}
+
+.choice {
+  width: var(--choice-size);
+  height: var(--choice-size);
+  font-size: calc(var(--choice-size) * 0.56);
+  font-weight: 700;
+  background: var(--surface);
+  border: 3px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 80ms ease, box-shadow 80ms ease, background-color 160ms ease,
+    border-color 160ms ease, opacity 160ms ease;
+}
+
+.choice:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+  background: #f0ebe2;
+}
+
+.choice--correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--correct);
+}
+
+.choice--wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-bg);
+  color: var(--wrong);
+}
+
+/* 正解と、押した選択肢に目が行くよう、関係のない 2 つは薄くする */
+.choice--dimmed {
+  opacity: 0.3;
+}
+
+/* 「つぎへ」が出ても画面が動かないよう、出ていないときも高さを確保しておく */
+.actionbar {
+  flex: 0 0 auto;
+  height: max(76px, min(15vh, 130px));
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- ◯✕ の判定表示 ---------- */
+
+.judge-mark {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 10;
+  animation: judge-in 1200ms ease-out forwards;
+}
+
+.judge-mark svg {
+  width: min(62vh, 62vw);
+  height: min(62vh, 62vw);
+  stroke-width: 7;
+}
+
+.judge-mark--correct svg {
+  stroke: var(--correct);
+}
+
+.judge-mark--wrong svg {
+  stroke: var(--wrong);
+}
+
+.judge-stroke {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: judge-draw 380ms ease-out forwards;
+}
+
+.judge-stroke--second {
+  animation-delay: 170ms;
+}
+
+@keyframes judge-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 大きく出したあと、下の文字が読めるよう薄く残す */
+@keyframes judge-in {
+  0% {
+    transform: scale(0.55);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.13;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .judge-stroke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+  .judge-mark {
+    animation: judge-in 1200ms step-end forwards;
+  }
+}
