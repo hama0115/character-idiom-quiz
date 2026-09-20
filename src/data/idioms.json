@@ -268,5 +268,275 @@
     "choices": ["魎", "両", "涼", "梁"],
     "meaning": "山や川にすむ怪物。転じて、さまざまな悪事を働く者のたとえ。",
     "level": "veryHard"
+  },
+  {
+    "id": "sessa-takuma",
+    "idiom": "切磋琢磨",
+    "reading": "せっさたくま",
+    "blankIndex": 1,
+    "choices": ["磋", "蹉", "差", "佐"],
+    "meaning": "磋は磨きあげること。友人同士で励まし合い、学問や人格を高めること。",
+    "level": "normal"
+  },
+  {
+    "id": "senzai-ichiguu",
+    "idiom": "千載一遇",
+    "reading": "せんざいいちぐう",
+    "blankIndex": 1,
+    "choices": ["載", "裁", "栽", "歳"],
+    "meaning": "載は年。千年に一度しかないほどの、めったにない好機。",
+    "level": "normal"
+  },
+  {
+    "id": "taiki-bansei",
+    "idiom": "大器晩成",
+    "reading": "たいきばんせい",
+    "blankIndex": 2,
+    "choices": ["晩", "番", "盤", "判"],
+    "meaning": "大きな器は完成に時間がかかる。大人物は大成するのが遅いこと。",
+    "level": "normal"
+  },
+  {
+    "id": "ichimou-dajin",
+    "idiom": "一網打尽",
+    "reading": "いちもうだじん",
+    "blankIndex": 1,
+    "choices": ["網", "妄", "盲", "亡"],
+    "meaning": "一つの網ですべて捕らえる。悪人や容疑者を一度に検挙すること。",
+    "level": "normal"
+  },
+  {
+    "id": "yuujuu-fudan",
+    "idiom": "優柔不断",
+    "reading": "ゆうじゅうふだん",
+    "blankIndex": 1,
+    "choices": ["柔", "揉", "絨", "従"],
+    "meaning": "決断力がなく、ぐずぐずして物事を決められないこと。",
+    "level": "normal"
+  },
+  {
+    "id": "shinshou-boudai",
+    "idiom": "針小棒大",
+    "reading": "しんしょうぼうだい",
+    "blankIndex": 2,
+    "choices": ["棒", "奉", "俸", "傍"],
+    "meaning": "針ほど小さいことを棒ほど大きく言う。大げさに言うこと。",
+    "level": "normal"
+  },
+  {
+    "id": "wayou-setchuu",
+    "idiom": "和洋折衷",
+    "reading": "わようせっちゅう",
+    "blankIndex": 3,
+    "choices": ["衷", "忠", "中", "沖"],
+    "meaning": "衷は中まのこと。日本風と西洋風をうまく取り合わせること。",
+    "level": "normal"
+  },
+  {
+    "id": "gishin-anki",
+    "idiom": "疑心暗鬼",
+    "reading": "ぎしんあんき",
+    "blankIndex": 2,
+    "choices": ["暗", "闇", "庵", "安"],
+    "meaning": "疑いの心があると、何でもないことまで恐ろしく感じること。",
+    "level": "normal"
+  },
+  {
+    "id": "taigen-sougo",
+    "idiom": "大言壮語",
+    "reading": "たいげんそうご",
+    "blankIndex": 2,
+    "choices": ["壮", "庄", "荘", "装"],
+    "meaning": "実力以上に大きく見せる、ほらを吹くような言葉。",
+    "level": "normal"
+  },
+  {
+    "id": "tantou-chokunyuu",
+    "idiom": "単刀直入",
+    "reading": "たんとうちょくにゅう",
+    "blankIndex": 0,
+    "choices": ["単", "短", "端", "丹"],
+    "meaning": "前置きなしに、いきなり本題に踏み込むこと。",
+    "level": "normal"
+  },
+  {
+    "id": "shinki-itten",
+    "idiom": "心機一転",
+    "reading": "しんきいってん",
+    "blankIndex": 1,
+    "choices": ["機", "気", "希", "期"],
+    "meaning": "気持ちを切り替えて、新たな気持ちでやり直すこと。",
+    "level": "normal"
+  },
+  {
+    "id": "rinki-ouhen",
+    "idiom": "臨機応変",
+    "reading": "りんきおうへん",
+    "blankIndex": 2,
+    "choices": ["応", "往", "王", "央"],
+    "meaning": "その場の状況に合わせて、適切に対応すること。",
+    "level": "normal"
+  },
+  {
+    "id": "abi-kyoukan",
+    "idiom": "阿鼻叫喚",
+    "reading": "あびきょうかん",
+    "blankIndex": 3,
+    "choices": ["喚", "換", "歓", "環"],
+    "meaning": "阿鼻地獄で叫ぶさま。悲惨で逃げ場のない苦しみのたとえ。",
+    "level": "hard"
+  },
+  {
+    "id": "ingin-burei",
+    "idiom": "慇懃無礼",
+    "reading": "いんぎんぶれい",
+    "blankIndex": 1,
+    "choices": ["懃", "勤", "謹", "僅"],
+    "meaning": "表面は丁寧だが、心の中では相手を見下していること。",
+    "level": "hard"
+  },
+  {
+    "id": "kien-banjou",
+    "idiom": "気炎万丈",
+    "reading": "きえんばんじょう",
+    "blankIndex": 1,
+    "choices": ["炎", "焔", "宴", "縁"],
+    "meaning": "意気込みが盛んで、勢いが非常に強いこと。",
+    "level": "hard"
+  },
+  {
+    "id": "shoso-ryoutan",
+    "idiom": "首鼠両端",
+    "reading": "しゅそりょうたん",
+    "blankIndex": 1,
+    "choices": ["鼠", "子", "巣", "礎"],
+    "meaning": "鼠が穴から首を出して様子を見るように、決断をためらうこと。",
+    "level": "hard"
+  },
+  {
+    "id": "kyokugaku-ase",
+    "idiom": "曲学阿世",
+    "reading": "きょくがくあせい",
+    "blankIndex": 2,
+    "choices": ["阿", "亜", "唖", "婀"],
+    "meaning": "阿はおもねること。真理を曲げ、世に迎合する学問・態度。",
+    "level": "hard"
+  },
+  {
+    "id": "iidakunodaku",
+    "idiom": "唯唯諾諾",
+    "reading": "いいだくだく",
+    "blankIndex": 2,
+    "choices": ["諾", "若", "匿", "怒"],
+    "meaning": "諾は承知すること。逆らうことなく、言いなりになるさま。",
+    "level": "hard"
+  },
+  {
+    "id": "gyokuseki-konkou",
+    "idiom": "玉石混淆",
+    "reading": "ぎょくせきこんこう",
+    "blankIndex": 3,
+    "choices": ["淆", "効", "絞", "郊"],
+    "meaning": "よいものと悪いものが入り混じっていること。",
+    "level": "hard"
+  },
+  {
+    "id": "seidaku-heidon",
+    "idiom": "清濁併呑",
+    "reading": "せいだくへいどん",
+    "blankIndex": 3,
+    "choices": ["呑", "貪", "淡", "痰"],
+    "meaning": "清いものも濁ったものも受け入れる。度量の大きいたとえ。",
+    "level": "hard"
+  },
+  {
+    "id": "ikkaku-senkin",
+    "idiom": "一攫千金",
+    "reading": "いっかくせんきん",
+    "blankIndex": 1,
+    "choices": ["攫", "獲", "覚", "較"],
+    "meaning": "攫はつかむこと。一度の機会で巨万の富を得ること。",
+    "level": "hard"
+  },
+  {
+    "id": "funkotsu-saishin",
+    "idiom": "粉骨砕身",
+    "reading": "ふんこつさいしん",
+    "blankIndex": 2,
+    "choices": ["砕", "催", "崔", "摧"],
+    "meaning": "骨を粉にし身を砕くほど、全力を尽くして働くこと。",
+    "level": "hard"
+  },
+  {
+    "id": "manshin-soui",
+    "idiom": "満身創痍",
+    "reading": "まんしんそうい",
+    "blankIndex": 2,
+    "choices": ["創", "槍", "倉", "層"],
+    "meaning": "創は傷。体中が傷だらけであること。転じて、攻撃を浴びること。",
+    "level": "hard"
+  },
+  {
+    "id": "higure-toen",
+    "idiom": "日暮途遠",
+    "reading": "にちぼとえん",
+    "blankIndex": 1,
+    "choices": ["暮", "慕", "墓", "模"],
+    "meaning": "日は暮れかけているのに道は遠い。やるべきことが多いのに時間がないこと。",
+    "level": "hard"
+  },
+  {
+    "id": "ikin-shoukei",
+    "idiom": "衣錦尚絅",
+    "reading": "いきんしょうけい",
+    "blankIndex": 3,
+    "choices": ["絅", "襟", "京", "経"],
+    "meaning": "絅は薄い上着。錦の衣の上に薄い衣をまとう。才能をひけらかさないこと。",
+    "level": "veryHard"
+  },
+  {
+    "id": "kenkon-itteki",
+    "idiom": "乾坤一擲",
+    "reading": "けんこんいってき",
+    "blankIndex": 1,
+    "choices": ["坤", "昆", "梱", "混"],
+    "meaning": "坤は地。天地を賭けた大勝負。運命をかけたいちかばちかの試み。",
+    "level": "veryHard"
+  },
+  {
+    "id": "shishi-hakuto",
+    "idiom": "獅子搏兎",
+    "reading": "ししはくと",
+    "blankIndex": 2,
+    "choices": ["搏", "博", "薄", "縛"],
+    "meaning": "搏はうつこと。小さな相手にも全力を尽くすことのたとえ。",
+    "level": "veryHard"
+  },
+  {
+    "id": "eisho-ensetsu",
+    "idiom": "郢書燕説",
+    "reading": "えいしょえんせつ",
+    "blankIndex": 0,
+    "choices": ["郢", "郵", "郎", "郷"],
+    "meaning": "郢の手紙を燕が勝手に解釈する。的外れな解釈をすること。",
+    "level": "veryHard"
+  },
+  {
+    "id": "kofuku-gekijou",
+    "idiom": "鼓腹撃壌",
+    "reading": "こふくげきじょう",
+    "blankIndex": 3,
+    "choices": ["壌", "攘", "譲", "嬢"],
+    "meaning": "腹を太鼓にし土を打って歌う。太平の世を楽しむさま。",
+    "level": "veryHard"
+  },
+  {
+    "id": "ihen-sanzetsu",
+    "idiom": "韋編三絶",
+    "reading": "いへんさんぜつ",
+    "blankIndex": 0,
+    "choices": ["韋", "違", "緯", "偉"],
+    "meaning": "韋はなめし革。本の綴じ紐が三度切れるほど、熱心に読書すること。",
+    "level": "veryHard"
   }
 ]
