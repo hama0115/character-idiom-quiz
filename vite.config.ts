@@ -18,14 +18,25 @@ export default defineConfig({
         lang: 'ja',
         // ホーム画面から全画面で起動し、アドレスバーとタブを出さない
         display: 'standalone',
-        orientation: 'landscape',
+        // orientation は指定しない。
+        // Android の一部端末では landscape 固定の PWA がホーム画面から起動できない。
         start_url: '/',
         scope: '/',
         background_color: '#f7f4ee',
         theme_color: '#f7f4ee',
         icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          {
+            src: 'icons/icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any',
+          },
+          {
+            src: 'icons/icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any',
+          },
           {
             src: 'icons/icon-maskable-512.png',
             sizes: '512x512',
